@@ -1,6 +1,6 @@
 package jrest;
 
-public class Track {
+public class Resume {
 
     String title;
     String singer;
@@ -23,7 +23,7 @@ public class Track {
 
     @Override
     public String toString() {
-        return "Track [title=" + title + ", singer=" + singer + "]";
+        return "Resume [title=" + title + ", singer=" + singer + "]";
     }
 
 }

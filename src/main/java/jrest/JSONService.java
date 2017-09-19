@@ -8,9 +8,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 @Path("/json/hhstat")
 public class JSONService {
@@ -67,9 +65,9 @@ public class JSONService {
     @POST
     @Path("/post")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response createTrackInJSON(Track track) {
+    public Response createTrackInJSON(Resume resume) {
 
-        String result = "Track saved : " + track;
+        String result = "Resume saved : " + resume;
         return Response.status(201).entity(result).build();
 
     }
